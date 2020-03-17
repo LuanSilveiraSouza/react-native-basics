@@ -13,5 +13,13 @@ export default StyleSheet.create({
     padding: 10,
     borderRadius: 10,
     margin: 5
+  },
+  button: {
+    backgroundColor: '#aaa',
+    color: '#fff',
+    borderWidth: 3,
+    borderRadius: 10,
+    padding: 10,
+    margin: 5,
   }
 });
