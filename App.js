@@ -10,6 +10,7 @@ import Counter from './src/components/Counter';
 import Notification from './src/components/Notification';
 import Event from './src/components/Event';
 import GrandFather from './src/components/DirectComunication';
+import SyncText from './src/components/IndirectComunication'
 
 const Drawer = createDrawerNavigator();
 
@@ -25,6 +26,7 @@ export default function App() {
         <Drawer.Screen name="Notificação" component={Notification}/>
         <Drawer.Screen name="Evento" component={Event}/>
         <Drawer.Screen name="Comunicação Direta" component={() => <GrandFather nome='Lucio' sobrenome='Fraga'/>}/>
+        <Drawer.Screen name="Comunicação Indireta" component={() => <SyncText/>}/>
       </Drawer.Navigator>
     </NavigationContainer>
   );
