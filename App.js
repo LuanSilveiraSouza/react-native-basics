@@ -12,6 +12,7 @@ import Event from './src/components/Event';
 import GrandFather from './src/components/DirectComunication';
 import SyncText from './src/components/IndirectComunication';
 import FlexList from './src/components/FlexList';
+import Flex from './src/components/Flex';
 
 const Drawer = createDrawerNavigator();
 
@@ -27,8 +28,9 @@ export default function App() {
         <Drawer.Screen name="Notificação" component={Notification}/>
         <Drawer.Screen name="Evento" component={Event}/>
         <Drawer.Screen name="Comunicação Direta" component={() => <GrandFather nome='Lucio' sobrenome='Fraga'/>}/>
-        <Drawer.Screen name="Comunicação Indireta" component={() => <SyncText/>}/>
-        <Drawer.Screen name="Lista Flex" component={() => <FlexList/>}/>
+        <Drawer.Screen name="Comunicação Indireta" component={SyncText}/>
+        <Drawer.Screen name="Lista Flex" component={FlexList}/>
+        <Drawer.Screen name="Flexbox" component={Flex}/>
       </Drawer.Navigator>
     </NavigationContainer>
   );
